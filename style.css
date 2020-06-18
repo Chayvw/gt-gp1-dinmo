@@ -1,0 +1,36 @@
+#main-page {
+
+    border: 3px solid green;
+    padding: 200px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #dinner-recipe {
+    border: 3px solid green;
+    padding: 200px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+  }
+
+  #movie-recs {
+    border: 3px solid green;
+    padding: 200px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+  }
+
+  #results-view {
+    border: 3px solid green;
+    padding: 200px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+  }
