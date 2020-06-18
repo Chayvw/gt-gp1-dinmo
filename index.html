@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DinMo</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!--Nav Bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#" id="navbar-head"><h1>DinMo</h1></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="#" id="navbar-head">
+            <h1>DinMo</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#" id="about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" id="credit">Credit</a>
-            </li>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" id="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="credit">Credit</a>
+                </li>
         </div>
         <div class="container">
             <div class="row">
@@ -31,102 +40,108 @@
                 </div>
             </div>
         </div>
-      </nav>
-      <!--Main Page-->
-      <section class="container" id ="main-page">
-          <div class="row text-center">
-              <div class="col-sm-12">
+    </nav>
+    <!--Main Page-->
+    <section class="container" id="main-page">
+        <div class="row text-center">
+            <div class="col-sm-12">
                 <p>Step One</p>
-          </div>
-          <div class="row text-center">
-              <div class="col-sm">
-                <p>Step Two</p>
-          </div>
-          <div class="row text-center">
+            </div>
+            <div class="row text-center">
                 <div class="col-sm">
-                <p>Step Three</p>
-            </div> 
-          </div>
-      <div class="row text-center">
-          <div class="col-sm">
-            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#get-started" id="get-started">Get Started</button>
-          </div>
-        </section>
+                    <p>Step Two</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm">
+                        <p>Step Three</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm">
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#get-started"
+                            id="get-started">Get Started</button>
+                    </div>
+    </section>
 
-      <!--Dinner Recipe-->
-      <section class="container" id= "dinner-recipe">
-          <div class="row">
-              <div class="col-sm-12">
-                  <!--Questions-->
-                  <h4>How Many People Are Eating?</h4>
-                  <select class="custom-select bg-transparent border-light">
-                      <option value="1"></option>
-                      <option value="2"></option>
-                      <option value="3"></option>
-                      <option value="4"></option>
-                      <option value="5"></option>
-                  </select>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-sm-12">
-                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#recipeBtn" id="recipeBtn">Next</button>
-              </div>
-          </div>
-        </section>
-      
-      <!---Movie Recommendations-->
-      <section class="container" id= "movie-recs">
+    <!--Dinner Recipe-->
+    <section class="container" id="dinner-recipe">
         <div class="row">
             <div class="col-sm-12">
-            <!--Questions-->
-            <form class="w-75">
-                <div class="form-group">
-                    <h4>What is your favorite movie?</h4>
-                    <input class="form-control form-control-lg text-center" id= "movie-input" type="text"/>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#movieBtn" id="movieBtn">Results</button>
-                    </div>
-                </div>
-            </form>
+                <!--Questions-->
+                <h4>How Many People Are Eating?</h4>
+                <select class="custom-select bg-transparent border-light">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                </select>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#recipeBtn"
+                    id="recipeBtn">Next</button>
             </div>
-            </section>
+        </div>
+    </section>
 
-            <!--Results-->
-        <section class="container" id="results-view">
-            <div class="row">
-                <!--Recipe Load-->
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title" id ="recipe-title"></h4>
-                            <!--Source-->
-                            <p class="card text" id = "recipe-source"></p>
+    <!---Movie Recommendations-->
+    <section class="container" id="movie-recs">
+        <div class="row">
+            <div class="col-sm-12">
+                <!--Questions-->
+                <form class="w-75">
+                    <div class="form-group">
+                        <h4>What is your favorite movie?</h4>
+                        <input class="form-control form-control-lg text-center" id="movie-input" type="text" />
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#movieBtn"
+                                id="movieBtn">Results</button>
                         </div>
                     </div>
-                   
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Results-->
+    <section class="container" id="results-view">
+        <div class="row">
+            <!--Recipe Load-->
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title" id="recipe-title"></h4>
+                        <!--Source-->
+                        <p class="card text" id="recipe-source"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <!--Movie Load-->
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="movie-title"></h5>
+                        <p class="card-text" id="movie-year"></p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <!--Movie Load-->
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class= "card-title" id="movie-title"></h5>
-                            <p class="card-text" id="movie-year"></p>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <button type="reset" class="btn btn-secondary" data-toggle="modal" data-target="#resetBtn" id="resetBtn">Go Back</button>
-                            </div>
-                    
-        </section>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button type="reset" class="btn btn-secondary" data-toggle="modal" data-target="#resetBtn"
+                    id="resetBtn">Go Back</button>
+            </div>
+
+    </section>
 </body>
+<script src="arithmetic.js"></script>
+
 </html>
