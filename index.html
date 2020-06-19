@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DinMo</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!--Nav Bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#" id="navbar-head"><h1>DinMo</h1></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="#" id="navbar-head">
+            <h1>DinMo</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
             <div class="row">
@@ -23,13 +32,13 @@
         </div>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#" id="about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" id="credit">Credit</a>
-            </li>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" id="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="credit">Credit</a>
+                </li>
         </div>
         <!-- <div class="container">
             <div class="row">
@@ -174,10 +183,35 @@
                 <button type="button" class="btn btn-secondary" id="movieBtn">Results</button>
                     </div>
                 </div>
-            </form>
+                <div class="row text-center">
+                    <div class="col-sm">
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#get-started"
+                            id="get-started">Get Started</button>
+                    </div>
+    </section>
+
+    <!--Dinner Recipe-->
+    <section class="container" id="dinner-recipe">
+        <div class="row">
+            <div class="col-sm-12">
+                <!--Questions-->
+                <h4>How Many People Are Eating?</h4>
+                <select class="custom-select bg-transparent border-light">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                </select>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#recipeBtn"
+                    id="recipeBtn">Next</button>
             </div>
-            </section>
+        </div>
+    </section>
 
             <!--Results-->
         <section class="container" id="results-view">
@@ -279,4 +313,6 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
       <script src="javascript.js"></script>
 </body>
+<script src="javascript.js"></script>
+
 </html>
