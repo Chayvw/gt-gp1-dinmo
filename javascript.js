@@ -4,6 +4,33 @@
 $(document).ready(function(){
 
 
+
+
+
+
+
+
+
+
+
+    //Function Definitions
+    
+
+
+
+
+
+
+
+
+
+
+    //EVENT LISTENERS
+    //Create getStarted button event listener
+    $("#get-started").on("click", function(){
+        getStarted();
+    });
+
 })
 
 //  // global variables
