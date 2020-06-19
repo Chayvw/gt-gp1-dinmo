@@ -41,7 +41,7 @@ $(document).ready(function () {
     var genre;
     var company;
     // need to update 
-    var movieQueryUrl = "http://www.omdbapi.com/?t=" + movie + "&apikey=d197feef";
+    var movieQueryUrl = "https://www.omdbapi.com/?t=" + movie + "&apikey=d197feef";
   
 
     $.ajax({
