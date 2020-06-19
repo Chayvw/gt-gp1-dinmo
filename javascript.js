@@ -10,39 +10,35 @@ $(document).ready(function(){
     // PUT This within getRecipe function    
     // food api
     var queryUrl = 'https://api.edamam.com/search?q=' + keyword + '&app_id=3e501918&app_key=c95225452f4fe51bc9df3f954ead7e29&ingredients=' + veggie + '&healthLabels=' + healthLabels; //api goes here
-    var recipeParameters = []
-    var keyword = recipeParameters[0]
-    var veggie = recipeParameters[1]
-    var healthLabels = recipeParameters[2]
+    var recipeParameters;
+    var keyword; 
+    var veggie;
+    var healthLabels; 
     $.ajax({
       url: queryUrl,
       method: "GET"
     }).then(function(response){
-      console.log(response);
+      
     })
 
 
-     // movie api
-     var queryURL0 = ''; //api goes here
-     $.ajax({
-       url: queryURL0,
-       method: "GET"
-     }).then(function(response){
-       console.log(response);
-     })
-
-
-
-
+    
     //Function Definitions
-    //
+    //Created getStarted function
+    function getStarted (){
+      $("#main-page").attr("style", "display: none");
+      $("#dinner-recipe").attr("style", "display:block");
+      
+
+    }
 
 
     //EVENT LISTENERS
     //Create getStarted button event listener
     $("#get-started").on("click", function(){
         getStarted();
-        console.log();
+        console.log("Hello World");
+       
     });
 
 })
