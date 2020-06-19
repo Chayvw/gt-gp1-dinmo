@@ -33,14 +33,24 @@ $(document).ready(function(){
     }
 
 
+
     //EVENT LISTENERS
     //Create getStarted button event listener
     $("#get-started").on("click", function(){
         getStarted();
-        console.log("Hello World");
+      
        
     });
 
+  //Create getRecipe button event listener
+  $("#recipeBtn").on("click", function(){
+    getRecipe();
+  })
+
+  //Create getMovie button event listener
+  $("#movieBtn").on("click", function(){
+    getMovie();
+  })
 })
 
  // function callers
