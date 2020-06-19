@@ -5,11 +5,6 @@
  // Function definitions
 $(document).ready(function(){ 
   
-    $("#recipeBtn").on("click", function(){
-      console.log("Button works");
-          getRecipe();
-        })
-  
     // food api
     function getRecipe(){
     $("#dinner-recipe").attr("style", "display: none");
@@ -52,6 +47,7 @@ $.ajax({
 }
 
     //EVENT LISTENERS
+
     //Create getStarted button event listener
     $("#get-started").on("click", function(){
         getStarted();
@@ -59,7 +55,14 @@ $.ajax({
        
     });
 
+    //recipe button
+    $("#recipeBtn").on("click", function(){
+      console.log("Button works");
+          getRecipe();
+        })
+
   })
+  
 
   // this for loop can be used with a click event so when someone submits their choices they get a randomized result based off of their preferences
 // var movies = 0 ; //variable that targets the AJAX request  with a list of movies inside of an object array
