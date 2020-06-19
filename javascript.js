@@ -13,7 +13,10 @@ $(document).ready(function(){
     var healthLabels;
     //below is queryURL so which is concaonated with variables so that when the user selects their choices on the web page they are plugged into the queryurl when the request is processed.
     var queryUrl = 'https://api.edamam.com/search?q=' + keyword + '&app_id=3e501918&app_key=c95225452f4fe51bc9df3f954ead7e29&ingredients=' + veggie + '&healthLabels=' + healthLabels;
-    function foodQuery(){
+
+    //wrapping a button click event around the below two functions
+      function foodQuery(){
+      foodQuestions();
           $.ajax({
       url: queryUrl,
       method: "GET"
@@ -22,14 +25,18 @@ $(document).ready(function(){
     })
     }
 
-// when the function is called it stores the answers to the questions with drop down menu's into an array
-//this function goes into the event listener
-function foodQuestions(){
+    function foodQuestions(){
   keyword = $("#").val();
   veggie = $("#").val();
   healthLabels = $("#").val();
   foodQuery();
 }
+
+    
+
+// when the function is called it stores the answers to the questions with drop down menu's into an array
+//this function goes into the event listener
+
 
 //movie api
 //below is queryURL0 so which is concaonated with variables so that when the user selects their choices on the web page they are plugged into queryurl0 when the request is processed.
