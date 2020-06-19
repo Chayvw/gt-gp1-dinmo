@@ -42,6 +42,7 @@ $(document).ready(function(){
     //Create getStarted button event listener
     $("#get-started").on("click", function(){
         getStarted();
+        console.log();
     });
 
 })
