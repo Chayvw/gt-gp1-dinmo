@@ -19,6 +19,7 @@
   #get-started{
     margin-top: 10;
     margin-bottom: 10;
+    
   }
 
   #dinner-recipe {
@@ -27,6 +28,7 @@
     margin-right:auto;
     margin-top: 20px; 
     margin-bottom: 20px;
+    display: none;
   }
 
   #movie-recs {
@@ -35,6 +37,7 @@
     margin-right:auto;
     margin-top: 20px; 
     margin-bottom: 20px;
+    display: none;
   }
 
   #results-view {
@@ -43,4 +46,13 @@
     margin-right:auto;
     margin-top: 20px; 
     margin-bottom: 20px;
+    display: none;
+  }
+
+  .no-display {
+    display: none;
+  }
+
+  .display {
+    display: block;
   }
