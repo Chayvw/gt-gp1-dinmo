@@ -5,21 +5,15 @@
  // Global variables
  // Function definitions
 $(document).ready(function(){
-
-     // movie api
-    var queryURL0 = ''; //api goes here
-    $.ajax({
-      url: queryURL0,
-      method: "GET"
-    }).then(function(response){
-      console.log(response);
-    })
-        
+     
+    
+    // PUT This within getRecipe function    
     // food api
-    var queryUrl = 'https://api.edamam.com/search?q=' + keyword + '&app_id=3e501918&app_key=c95225452f4fe51bc9df3f954ead7e29&ingredients=' + veggie + '&dietLabels=' + diet; //api goes here
-    var keyword = []; //protien
-    var veggie = []; //vegitable
-    var diet = []; //
+    var queryUrl = 'https://api.edamam.com/search?q=' + keyword + '&app_id=3e501918&app_key=c95225452f4fe51bc9df3f954ead7e29&ingredients=' + veggie + '&healthLabels=' + healthLabels; //api goes here
+    var recipeParameters = []
+    var keyword = recipeParameters[0]
+    var veggie = recipeParameters[1]
+    var healthLabels = recipeParameters[2]
     $.ajax({
       url: queryUrl,
       method: "GET"
@@ -28,24 +22,20 @@ $(document).ready(function(){
     })
 
 
-
-
-
-
+     // movie api
+     var queryURL0 = ''; //api goes here
+     $.ajax({
+       url: queryURL0,
+       method: "GET"
+     }).then(function(response){
+       console.log(response);
+     })
 
 
 
 
     //Function Definitions
-    
-
-
-
-
-
-
-
-
+    //
 
 
     //EVENT LISTENERS
