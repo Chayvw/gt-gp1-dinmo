@@ -34,40 +34,116 @@
       </nav>
       <!--Main Page-->
       <section class="container" id ="main-page">
-          <div class="row text-center">
-              <div class="col-sm-12">
-                <p>Step One</p>
-          </div>
-          <div class="row text-center">
-              <div class="col-sm">
-                <p>Step Two</p>
-          </div>
-          <div class="row text-center">
-                <div class="col-sm">
-                <p>Step Three</p>
-            </div> 
-          </div>
+          <div class="row">
+              <div class="col-lg-12">
+              </div>
+            </div>
+                    <div class="col-sm-3 mx-auto">
+                        <div class="card" id="step1card">
+                            <div class="card-body">
+                                <h5 class="card-title">Step One</h5>
+                                <p class="card-text">Recommend a delicious dinner recipe by evaluating your nutritional needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-sm-3 mx-auto">
+                    <div class="card" id="step2card">
+                        <div class="card-body">
+                            <h5 class="card-title">Step Two</h5>
+                            <p class="card-text">Recommend a movie based on your favorite genre, movie, or production company.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-sm-3 mx-auto">
+                    <div class="card" id="step3card">
+                        <div class="card-body">
+                            <h5 class="card-title">Step Three</h5>
+                            <p class="card-text">Enjoy your night in!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
       <div class="row text-center">
           <div class="col-sm">
             <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#get-started" id="get-started">Get Started</button>
           </div>
+          
         </section>
 
       <!--Dinner Recipe-->
-      <section class="container" id= "dinner-recipe">
+      <section class="container" id="dinner-recipe">
           <div class="row">
-              <div class="col-sm-12">
+              <div class="col-lg-12">
                   <!--Questions-->
                   <h4>How Many People Are Eating?</h4>
                   <select class="custom-select bg-transparent border-light">
-                      <option value="1"></option>
-                      <option value="2"></option>
-                      <option value="3"></option>
-                      <option value="4"></option>
-                      <option value="5"></option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
                   </select>
               </div>
           </div>
+          <div class="row">
+            <div class="col-lg-12">
+                <h4>Protein Choice?</h4>
+                <select class="custom-select bg-transparent border-light">
+                    <option value="beef">beef</option>
+                    <option value="chicken">chicken</option>
+                    <option value="pork">pork</option>
+                    <option value="tofu">tofu</option>
+                    <option value="eggs">eggs</option>
+                    <option value="tuna">tuna</option>
+                    <option value="salmon">salmon</option>
+                    <option value="shrimp">shrimp</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h4>Veggie Choice?</h4>
+                <select class="custom-select bg-transparent border-light">
+                    <option value="broccoli">broccoli</option>
+                    <option value="spinach">spinach</option>
+                    <option value="asparagus">asparagus</option>
+                    <option value="kale">kale</option>
+                    <option value="potato">potato</option>
+                    <option value="carrot">carrot</option>
+                    <option value="tomato">tomato</option>
+                    <option value="zucchini">zucchini</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h4>Food Allergies?</h4>
+                <select class="custom-select bg-transparent border-light">
+                    <option value="peanuts">peanuts</option>
+                    <option value="treenuts">tree nuts</option>
+                    <option value="gluten">gluten</option>
+                    <option value="shellfish">shellfish</option>
+                    <option value="dairy">dairy</option>
+                    <option value="soybeans">soybeans</option>
+                    <option value="wheat">wheat</option>
+                    <option value="fish">fish</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h4>Special Dietary Needs?</h4>
+                <select class="custom-select bg-transparent border-light">
+                    <option value="vegetarian">vegetarian</option>
+                    <option value="vegan">vegan</option>
+                    <option value="low-carb">low carb</option>
+                    <option value="low-fat">low fat</option>
+                </select>
+            </div>
+        </div>
           <div class="row">
               <div class="col-sm-12">
                   <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#recipeBtn" id="recipeBtn">Next</button>
