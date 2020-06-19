@@ -14,6 +14,13 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>Dinner and a Movie Made Easy</h5>
+                </div>
+            </div>
+        </div>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
@@ -24,13 +31,13 @@
               <a class="nav-link" href="#" id="credit">Credit</a>
             </li>
         </div>
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <h5">Dinner and a Movie Made Easy</h5>
                 </div>
             </div>
-        </div>
+        </div> -->
       </nav>
       <!--Main Page-->
       <section class="container" id ="main-page">
@@ -68,18 +75,19 @@
             </div>
       <div class="row text-center">
           <div class="col-sm">
-            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#get-started" id="get-started">Get Started</button>
+            <button type="button" class="btn btn-secondary" id="get-started">Get Started</button>
           </div>
-          
+          </div>
         </section>
 
       <!--Dinner Recipe-->
       <section class="container" id="dinner-recipe">
         <!--Questions-->
+        <br>
           <div class="row">
             <div class="col-lg-12">
                 <h4>Protein Choice?</h4>
-                <select class="custom-select bg-transparent border-light">
+                <select class="custom-select bg-transparent border-light" id="protein">
                     <option value="beef">beef</option>
                     <option value="chicken">chicken</option>
                     <option value="pork">pork</option>
@@ -91,10 +99,11 @@
                 </select>
             </div>
         </div>
+        <br>
         <div class="row">
             <div class="col-lg-12">
                 <h4>Veggie Choice?</h4>
-                <select class="custom-select bg-transparent border-light">
+                <select class="custom-select bg-transparent border-light" id="veggie">
                     <option value="broccoli">broccoli</option>
                     <option value="spinach">spinach</option>
                     <option value="asparagus">asparagus</option>
@@ -106,10 +115,12 @@
                 </select>
             </div>
         </div>
+        <br>
         <div class="row">
             <div class="col-lg-12">
                 <h4>Special Dietary Needs?</h4>
-                <select class="custom-select bg-transparent border-light">
+                <br>
+                <select class="custom-select bg-transparent border-light" id="diet">
                     <option value="vegetarian">vegetarian</option>
                     <option value="vegan">vegan</option>
                     <option value="paleo">paleo</option>
@@ -121,9 +132,10 @@
                 </select>
             </div>
         </div>
+        <br>
           <div class="row text-center">
               <div class="col-sm-12">
-                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#recipeBtn" id="recipeBtn">Next</button>
+                  <button type="button" class="btn btn-secondary" id="recipeBtn">Next</button>
               </div>
           </div>
         </section>
@@ -131,10 +143,12 @@
       <!---Movie Recommendations-->
       <section class="container" id= "movie-recs">
       <!--Questions-->
+      <br>
                 <div class="row">
                     <div class="col-lg-12">
                         <h4>What genre would you like to watch?</h4>
-                        <select class="custom-select bg-transparent border-light">
+                        <br>
+                        <select class="custom-select bg-transparent border-light" id="genre">
                             <option value="comedy">comedy</option>
                             <option value="horror">horror</option>
                             <option value="action">action</option>
@@ -146,16 +160,18 @@
                         </select>
                     </div>
                 </div>
+                <br>
                 <div class="row">
                     <div class="col-lg-12">
                     <form class="movies">
                         <div class="form-group">
                             <h4>What is your favorite movie from that genre?</h4>
+                            <br>
                             <input class="form-control form-control-lg" id= "movie-input" type="text"/>
                         </div>
                 <div class="row text-center">
                     <div class="col-lg-12">
-                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#movieBtn" id="movieBtn">Results</button>
+                <button type="button" class="btn btn-secondary" id="movieBtn">Results</button>
                     </div>
                 </div>
             </form>
@@ -166,36 +182,101 @@
             <!--Results-->
         <section class="container" id="results-view">
             <div class="row">
-                <!--Recipe Load-->
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <!--Title-->
+                <!-- Recipe Panel -->
+                <div class="col py-3 px-lg-5 border text-center"><h4>Recipe Recommendation</h4></div>
+                <div class="col py-3 px-lg-5 border text-center"><h4>Movie Recommendation</h4></div>
+                            </div> 
+                <!--Recipe-->
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6">
+                                  <div class="card">
+                                    <div class="card-body">
+                                          <!--Title-->
                             <h4 class="card-title" id ="recipe-title"></h4>
                             <!--Source-->
-                            <p class="card text" id ="recipe-source"></p>
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-                <!--Movie Load-->
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class= "card-title" id="movie-title"></h4>
+                            <p class="card-text" id ="recipe-source"></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--Movie-->
+                                <div class="col-sm-6">
+                                  <div class="card">
+                                    <div class="card-body">
+                                        <!--Title-->
+                                      <h4 class= "card-title" id="movie-title"></h4>
+                                      <!--Movie Year-->
                             <p class="card-text" id="movie-year"></p>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-sm-12">
-                                <button type="reset" class="btn btn-secondary" data-toggle="modal" data-target="#resetBtn" id="resetBtn">Go Back</button>
-                            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>   
+                              <!--Recipe 2-->
+                              <div class="row justify-content-center">
+                                <div class="col-sm-6">
+                                  <div class="card">
+                                    <div class="card-body">
+                                          <!--Title-->
+                            <h4 class="card-title" id ="recipe-title2"></h4>
+                            <!--Source-->
+                            <p class="card-text" id ="recipe-source2"></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--Movie2-->
+                                <div class="col-sm-6">
+                                  <div class="card">
+                                    <div class="card-body">
+                                        <!--Title2-->
+                                      <h4 class= "card-title" id="movie-title2"></h4>
+                                      <!--Movie Year2-->
+                            <p class="card-text" id="movie-year2"></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>  
+                              <!--Recipe 3-->
+                              <div class="row justify-content-center">
+                                <div class="col-sm-6">
+                                  <div class="card">
+                                    <div class="card-body">
+                                          <!--Title-->
+                            <h4 class="card-title" id ="recipe-title3"></h4>
+                            <!--Source-->
+                            <p class="card-text" id ="recipe-source3"></p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--Movie3-->
+                                <div class="col-sm-6">
+                                  <div class="card">
+                                    <div class="card-body">
+                                        <!--Title2-->
+                                      <h4 class= "card-title" id="movie-title3"></h4>
+                                      <!--Movie Year2-->
+                            <p class="card-text" id="movie-year3"></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div> 
+                              <div class="row text-center">
+                                <div class="col-sm-12">
+                                    <button type="reset" class="btn btn-secondary" id="resetBtn">Go Back</button>
+                                </div>
+                                </div>
                     
         </section>
-        <script src="javascript.js"></script>
-        <script src="food-questions.js"></script>
+        
+        
+      
+      <footer>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright</div>
+        
+      </footer>
+      <!-- Footer -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script src="javascript.js"></script>
 </body>
 </html>
