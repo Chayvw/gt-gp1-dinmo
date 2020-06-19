@@ -46,22 +46,30 @@ $.ajax({
 
 }
 
+
     //EVENT LISTENERS
 
     //Create getStarted button event listener
     $("#get-started").on("click", function(){
         getStarted();
-        console.log("Hello World");
+      
        
     });
 
-    //recipe button
-    $("#recipeBtn").on("click", function(){
-      console.log("Button works");
-          getRecipe();
-        })
-
+  //Create getRecipe button event listener
+  $("#recipeBtn").on("click", function(){
+    getRecipe();
   })
+
+  //Create getMovie button event listener
+  $("#movieBtn").on("click", function(){
+    getMovie();
+  })
+})
+
+ // function callers
+ // event listeners
+  // this for loop can be used with a click event so when someone submits their choices they get a randomized result based off of their preferences
   
 
   // this for loop can be used with a click event so when someone submits their choices they get a randomized result based off of their preferences
