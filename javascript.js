@@ -16,13 +16,12 @@ $(document).ready(function(){
     })
         
     // food api
-    var queryUrl = 'https://api.edamam.com/search?q=steak&app_id=3e501918&app_key=c95225452f4fe51bc9df3f954ead7e29&ingredients=tomatoes&dietLabels=nuts&healthLabels=nuts'; //api goes here
-    var keyword = [];
-    var veggie = [];
-    var diet = [];
-    var allergy = [];
+    var queryUrl = 'https://api.edamam.com/search?q=' + keyword + '&app_id=3e501918&app_key=c95225452f4fe51bc9df3f954ead7e29&ingredients=' + veggie + '&dietLabels=' + diet; //api goes here
+    var keyword = []; //protien
+    var veggie = []; //vegitable
+    var diet = []; //
     $.ajax({
-      url: queryURL,
+      url: queryUrl,
       method: "GET"
     }).then(function(response){
       console.log(response);
