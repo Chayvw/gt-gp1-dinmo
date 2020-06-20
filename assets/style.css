@@ -1,0 +1,86 @@
+body {
+    background-image: url('./images/decorative-background-with-purple-damask-pattern_1048-3458.jpg')
+}
+/* nav bar */
+.navbar {
+    background-color: rgba(101, 189, 51, 0.7);
+    color: white;
+}
+.subheader {
+    display: inline-block;
+
+    margin: 0 5px 0 0;
+}
+
+.navbar-brand {
+    color: rgb(113, 75, 182);
+}
+.navbar-nav {
+    display: inline-block;
+
+    margin: 0 5px 0 0;
+}
+.nav-item {
+    color: white;
+}
+/*main page*/
+#main-page {
+
+    background-image: linear-gradient(to bottom right, rgb(76, 145, 12,.7), rgb(209, 238, 81,.7));
+    border: 3px solid white;
+    /* padding: 200px; */
+    margin: 20px auto;
+}
+/*main page cards*/
+#step1card {
+    margin-top: 10;
+}
+#step2card {
+    margin-top: 10;
+}
+#step3card {
+    margin-top: 10;
+}
+#get-started {
+    margin-top: 10;
+    margin-bottom: 10;
+
+}
+/*recipe page*/
+#dinner-recipe {
+  background-image: linear-gradient(to bottom right, rgb(76, 145, 12,.7), rgb(209, 238, 81,.7));
+    border: 3px solid white;
+    margin: 20px auto;
+    display: none;
+}
+/* movie page*/
+#movie-recs {
+  background-image: linear-gradient(to bottom right, rgb(76, 145, 12,.7), rgb(209, 238, 81,.7));
+    border: 3px solid white;
+    margin: 20px auto;
+    display: none;
+}
+/*results page*/
+#results-view {
+  background-image: linear-gradient(to bottom right, rgb(76, 145, 12,.7), rgb(209, 238, 81,.7));
+    border: 3px solid white;
+    margin: 20px auto;
+    display: none;
+}
+
+.no-display {
+    display: none;
+}
+
+.display {
+    display: block;
+}
+/*footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    color: white;
+}
+/*buttons*/
