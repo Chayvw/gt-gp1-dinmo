@@ -1,13 +1,12 @@
-/**
- * Project one programming script
- */
-// Global variables
-// Function definitions
 $(document).ready(function () {
-  // food api
+  
+//**FUNCTION DEFINITIONS */
+
   function getRecipe() {
+    // Hide dinner recipe container and show movie recommendations container
     $("#dinner-recipe").attr("style", "display: none");
     $("#movie-recs").attr("style", "display:block");
+    // Variables needed to create edamom URL
     var keywordArray = [];
     var protein = $("#protein").val();
     keywordArray.push(protein);
@@ -15,36 +14,60 @@ $(document).ready(function () {
     keywordArray.push(veggie);
     var healthLabels = $("#diet").val();
 
-    var veggie;
-    var healthLabels;
-    var queryUrl =
+    //Create queryUrl based on user's healthLabels choice
+    if($("#diet").val() === "none"){
+      var queryUrl = "https://api.edamam.com/search?q=" +
+      keywordArray +
+      "&app_id=3e501918&app_key=c95225452f4fe51bc9df3f954ead7e29";
+    } else {
+      var queryUrl =
       "https://api.edamam.com/search?q=" +
       keywordArray +
       "&app_id=3e501918&app_key=c95225452f4fe51bc9df3f954ead7e29" +
       "&health=" +
       healthLabels;
-      console.log(queryUrl);
+    }
+      //Make ajax call to get response data
     $.ajax({
       url: queryUrl,
       method: "GET",
     }).then(function (response) {
-      // for (i = 0; i < response.hits; i++) {
-          var randomIndex = Math.floor(Math.random() * 10);  
-        //   console.log(response.hits[randomIndex])
-        // }
-        console.log(randomIndex);
-        console.log(response.hits[randomIndex].recipe.label);
+      //Create randomIndex to in order to choose recipe at random from response
+      //  for (i = 0; i < 1; i++) {
+      console.log(response);
+      var randomIndex = Math.floor(Math.random() * 10);
+      var randomIndex2 = Math.floor(Math.random() * 10);
+      var randomIndex3 = Math.floor(Math.random() * 10);
+      // }
+      //Add text, image and url to Results for recipe1
+      $("#recipe-title").text(response.hits[randomIndex].recipe.label);
+      var imgURL = response.hits[randomIndex].recipe.image;
+      $("#recipe-icon").attr("src", imgURL);
+      $("#recipe-source").text("Source: " + response.hits[randomIndex].recipe.source);
+      var recipeURL = response.hits[randomIndex].recipe.url;
+      $("#recipe-url").attr("href" , recipeURL);
+      $("#recipe-url-text").text("Click Here for Recipe");
 
-      
+      //Add text, image and url to Results for recipe2
+      $("#recipe-title2").text(response.hits[randomIndex2].recipe.label);
+      var imgURL = response.hits[randomIndex2].recipe.image;
+      $("#recipe-icon2").attr("src", imgURL);
+      $("#recipe-source2").text("Source: " + response.hits[randomIndex2].recipe.source);
+      var recipeURL = response.hits[randomIndex2].recipe.url;
+      $("#recipe-url2").attr("href" , recipeURL);
+      $("#recipe-url-text-2").text("Click Here for Recipe");
+
+      //Add text, image and url to Results for recipe3
+      $("#recipe-title3").text(response.hits[randomIndex3].recipe.label);
+      var imgURL = response.hits[randomIndex3].recipe.image;
+      $("#recipe-icon3").attr("src", imgURL);
+      $("#recipe-source3").text("Source: " + response.hits[randomIndex3].recipe.source);
+      var recipeURL = response.hits[randomIndex3].recipe.url;
+      $("#recipe-url3").attr("href" , recipeURL);
+      $("#recipe-url-text-3").text("Click Here for Recipe");
     });
   }
 
-  //movie api
-  //below is queryURL0 so which is concaonated with variables so that when the user selects their choices on the web page they are plugged into queryurl0 when the request is processed.
-
-  // var queryUrl = "https://www.omdbapi.com/?t=" + movie + genre + company +"&apikey=trilogy";
-
-  // var movieParameters;
 
   function getMovie() {
     $("#movie-recs").attr("style", "display: none");
@@ -69,15 +92,15 @@ $(document).ready(function () {
     });
   }
 
-  //Function Definitions
-  //function calls
+  
+  
   //Created getStarted function
   function getStarted() {
     $("#main-page").attr("style", "display: none");
     $("#dinner-recipe").attr("style", "display:block");
   }
 
-  //EVENT LISTENERS
+  //**EVENT LISTENERS */
 
   //Create getStarted button event listener
   $("#get-started").on("click", function () {
@@ -93,13 +116,11 @@ $(document).ready(function () {
   $("#movieBtn").on("click", function () {
     getMovie();
   });
+
+  //Create startOver button event listener
+  $("#resetBtn").on("click", function () {
+    window.location.reload();;
+  });
+
 });
 
-// function callers
-// event listeners
-// this for loop can be used with a click event so when someone submits their choices they get a randomized result based off of their preferences
-
-// this for loop can be used with a click event so when someone submits their choices they get a randomized result based off of their preferences
-// var movies = 0 ; //variable that targets the AJAX request  with a list of movies inside of an object array
-// for(i=0;i<movies.length;i++)
-// var random = Math.floor(Math.random().length)

@@ -123,14 +123,15 @@
                 <h4>Special Dietary Needs?</h4>
                 <br>
                 <select class="custom-select bg-transparent border-light" id="diet">
+                    <!-- paleo, dairy-free, and low-sugar are not available in the developer api -->
                     <option value="vegetarian">vegetarian</option>
                     <option value="vegan">vegan</option>
-                    <option value="paleo">paleo</option>
-                    <option value="dairy-free">dairy-free</option>
+                    <!-- <option value="paleo">paleo</option> -->
+                    <!-- <option value="dairy-free">dairy-free</option> -->
                     <option value="peanut-free">peanut-free</option>
-                    <option value="low-sugar">low-sugar</option>
-                    <option value="soy-free">soy-free</option>
-                    <option value="shellfish-free">shellfish-free</option>
+                    <!-- <option value="low-sugar">low-sugar</option> -->
+                    <option value="tree-nut-free">tree-nut free</option>
+                    <option value="none">none</option>
                 </select>
             </div>
         </div>
@@ -194,11 +195,11 @@
                 <button type="button" class="btn btn-secondary" id="movieBtn">Results</button>
                     </div>
                 </div>
-                <div class="row text-center">
+                <!-- <div class="row text-center">
                     <div class="col-sm">
                         <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#get-started"
                             id="get-started">Get Started</button>
-                    </div>
+                    </div> -->
     </section>
 
     <!--Dinner Recipe-->
@@ -243,7 +244,7 @@
                             <!--Source-->
                             <p class="card-text" id ="recipe-source"></p>
                             <!--Link to recipe-->
-                            <a id="recipe-url"></a>
+                            <a id="recipe-url"><p id="recipe-url-text"></p></a>
                                     </div>
                                   </div>
                                 </div>
@@ -275,7 +276,7 @@
                             <!--Source-->
                             <p class="card-text" id ="recipe-source2"></p>
                             <!--Link to recipe-->
-                            <a id="recipe-url2"></a>
+                            <a id="recipe-url2"><p id="recipe-url-text-2"></p></a>
                                     </div>
                                   </div>
                                 </div>
@@ -307,7 +308,7 @@
                             <!--Source-->
                             <p class="card-text" id ="recipe-source3"></p>
                             <!--Link to recipe-->
-                            <a id="recipe-url"></a>
+                            <a id="recipe-url3"><p id="recipe-url-text-3"></p></a>
                                     </div>
                                   </div>
                                 </div>
@@ -329,7 +330,7 @@
                               </div> 
                               <div class="row text-center">
                                 <div class="col-sm-12">
-                                    <button type="reset" class="btn btn-secondary" id="resetBtn">Go Back</button>
+                                    <button type="reset" class="btn btn-secondary" id="resetBtn">Try Again</button>
                                 </div>
                                 </div>
                     
