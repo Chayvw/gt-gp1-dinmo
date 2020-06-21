@@ -92,21 +92,47 @@ $(document).ready(function () {
       movie +
       "/similar?api_key=aced25e61f7d1bd5c92fcbfed28dc07c&language=en-US" +
       "&with_genres" +
-      genre;
-    +(
-      // "&with_companies=" +
-      // company; +
-      // "with_keywords" +
-      // movie;
+      genre +
+      "&with_companies=" +
+      company +
+      "with_keywords" +
+      movie;
 
-      $.ajax({
-        url: movieQueryUrl,
-        method: "GET",
-      }).then(function (response) {
-        console.log("this function works!");
-        console.log(response);
-      })
-    );
+    $.ajax({
+      url: movieQueryUrl,
+      method: "GET",
+    }).then(function (response) {
+      var movieIndex = Math.floor(Math.random() * 10);
+      var movieIndex2 = Math.floor(Math.random() * 10);
+      var movieIndex3 = Math.floor(Math.random() * 10);
+      // }
+      //Add text, image and url to Results for movie1 use movieIndex
+      $("#movie-title").text(fillInTitlePathHere);
+      var movieImgURL = fillInPathHere;
+      $("#movie-icon").attr("src", movieImgURL);
+      $("#movie-year").text("Year: " + FillinYearPathHere);
+      var movieRentURL = fillInURLPathHere;
+      $("#movie-url").attr("href", movieRentURL);
+      $("#movie-url-text").text("Click To Rent This Movie");
+
+      //Add text, image and url to Results for recipe2 use movieIndex2
+      $("#movie-title2").text(fillInTitle2PathHere);
+      var movieImgURL = fillInPathHere;
+      $("#movie-icon2").attr("src", movieImgURL);
+      $("#movie-year2").text("Year: " + fillInPathHere);
+      var movieRentURL = fillInPathHere;
+      $("#movie-url2").attr("href", movieRentURL);
+      $("#movie-url-text-2").text("Click To Rent This Movie");
+
+      //Add text, image and url to Results for recipe3, use movieIndex3
+      $("#movie-title3").text(fillInTitle3PathHere);
+      var movieImgURL = fillInPathHere;
+      $("#movie-icon3").attr("src", movieImgURL);
+      $("#movie-year3").text("Year: " + fillInPathHere);
+      var movieRentURL = fillInPathHere;
+      $("#movie-url3").attr("href", movieRentURL);
+      $("#movie-url-text-3").text("Click To Rent This Movie");
+    });
   }
 
   //Created getStarted function
