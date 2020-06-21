@@ -1,5 +1,6 @@
 body {
-    background-image: url('./images/decorative-background-with-purple-damask-pattern_1048-3458.jpg')
+    background-image: url('./images/decorative-background-with-purple-damask-pattern_1048-3458.jpg');
+    font-family: 'Quicksand', sans-serif;
 }
 /* nav bar */
 .navbar {
