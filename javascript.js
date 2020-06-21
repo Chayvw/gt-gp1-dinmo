@@ -33,12 +33,11 @@ $(document).ready(function () {
       method: "GET",
     }).then(function (response) {
       //Create randomIndex to in order to choose recipe at random from response
-      //  for (i = 0; i < 1; i++) {
-      console.log(response);
+      
       var randomIndex = Math.floor(Math.random() * 10);
       var randomIndex2 = Math.floor(Math.random() * 10);
       var randomIndex3 = Math.floor(Math.random() * 10);
-      // }
+     
       //Add text, image and url to Results for recipe1
       $("#recipe-title").text(response.hits[randomIndex].recipe.label);
       var imgURL = response.hits[randomIndex].recipe.image;
@@ -84,7 +83,6 @@ $(document).ready(function () {
     // var company = $().val();
     var movie;
     var genre;
-    console.log(genre);
 
     // This URL needs to be tested and we need to find the movie ids.
     var movieQueryUrl =
@@ -105,7 +103,7 @@ $(document).ready(function () {
       var movieIndex = Math.floor(Math.random() * 10);
       var movieIndex2 = Math.floor(Math.random() * 10);
       var movieIndex3 = Math.floor(Math.random() * 10);
-      // }
+      
       //Add text, image and url to Results for movie1 use movieIndex
       $("#movie-title").text(fillInTitlePathHere);
       var movieImgURL = fillInPathHere;
