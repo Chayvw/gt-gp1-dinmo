@@ -31,6 +31,13 @@ body {
     /* padding: 200px; */
     margin: 20px auto;
 }
+/*main page image*/
+#main-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 /*main page cards*/
 #step1card {
     margin-top: 10;
@@ -80,12 +87,15 @@ body {
 #recipe-rec {
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 #recipe-rec2 {
   margin-bottom: 10px;
+  text-align: center;
 }
 #recipe-rec3 {
   margin-bottom: 10px;
+  text-align: center;
 }
 
 
@@ -93,12 +103,15 @@ body {
 #movie-rec {
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 #movie-rec2 {
   margin-bottom: 10px;
+  text-align: center;
 }
 #movie-rec3 {
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .no-display {
