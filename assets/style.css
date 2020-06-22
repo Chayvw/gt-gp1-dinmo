@@ -98,7 +98,20 @@ body {
   margin-bottom: 10px;
   text-align: center;
 }
+#recipe-icon {
+  height: 300px;
+  width: 300px;
+}
 
+#recipe-icon2 {
+  height: 300px;
+  width: 300px;
+}
+
+#recipe-icon3 {
+  height: 300px;
+  width: 300p
+}
 
 /*movie results*/
 #movie-rec {
@@ -115,6 +128,20 @@ body {
   text-align: center;
 }
 
+#movie-icon {
+  height: 300px;
+  width: 300px;
+}
+
+#movie-icon2 {
+  height: 300px;
+  width: 300px;
+}
+
+#movie-icon3 {
+  height: 300px;
+  width: 300px;
+}
 .no-display {
     display: none;
 }
