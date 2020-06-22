@@ -33,11 +33,11 @@ $(document).ready(function () {
       method: "GET",
     }).then(function (response) {
       //Create randomIndex to in order to choose recipe at random from response
-      
+
       var randomIndex = Math.floor(Math.random() * 10);
       var randomIndex2 = Math.floor(Math.random() * 10);
       var randomIndex3 = Math.floor(Math.random() * 10);
-     
+
       //Add text, image and url to Results for recipe1
       $("#recipe-title").text(response.hits[randomIndex].recipe.label);
       var imgURL = response.hits[randomIndex].recipe.image;
@@ -72,7 +72,6 @@ $(document).ready(function () {
       $("#recipe-url-text-3").text("Click Here for Recipe");
     });
   }
-
   function getMovie() {
     $("#movie-recs").attr("style", "display: none");
     $("#results-view").attr("style", "display:block");
@@ -136,6 +135,9 @@ $(document).ready(function () {
       });
     });
   }
+  
+
+  
 
   //Created getStarted function
   function getStarted() {
