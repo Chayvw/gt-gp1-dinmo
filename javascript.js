@@ -105,10 +105,10 @@ $(document).ready(function () {
       var movieIndex3 = Math.floor(Math.random() * 10);
       
       //Add text, image and url to Results for movie1 use movieIndex
-      $("#movie-title").text(fillInTitlePathHere);
-      var movieImgURL = fillInPathHere;
-      $("#movie-icon").attr("src", movieImgURL);
-      $("#movie-year").text("Year: " + FillinYearPathHere);
+      $("#movie-title").text(response.results[movieIndex].title);
+      var movieImgURL = response.results[movieIndex].poster_path;
+      $("#movie-icon").attr("src", JSON.stringify(movieImgURL));
+      $("#movie-year").text("Year: " + response.);
       var movieRentURL = fillInURLPathHere;
       $("#movie-url").attr("href", movieRentURL);
       $("#movie-url-text").text("Click To Rent This Movie");
