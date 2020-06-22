@@ -18,31 +18,66 @@
 </head>
 
 <body>
+     <!--navbar modal-->
+     <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">About</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This website is for those looking to enjoy their eveing with their significant other, or even just themselves. An evening of a good movie and some dinner is always rejuvinating before going back to work the next day. It is a great way to relax. With this application it is possible to go into a database full of good suggestions and set up your eveing the right way. First, pick the food that you want. You can choose the protein, veggie, and even whether or not you have any dietary restrictions. Next, go to the movies sections where you have the ability to choose the genre, a favorite movie from that genre, and also your favorite production company that that your search results are based off of your personal preferences. Please enjoy!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="creditModal" tabindex="-1" role="dialog" aria-labelledby="creditModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="creditModalLabel">Credit</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This website's code was written by Chay Williams, Christina Starr, Austin Keener, and Phuong Le. "This product uses the TMDb API but is not endorsed or certified by TMDb."</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Nav Bar-->
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#" id="navbar-head">
             <h1>DinMo</h1>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container">
+         <!--Subheader-->
+         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <h5 class="subheader">Dinner and a Movie Made Easy</h5>
                 </div>
             </div>
         </div>
-      
+        <!--toggle-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+      <!--navbar collapse-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-item" href="#" id="about">About</a>
+                    <a class="nav-item" href="#" data-toggle="modal" data-target="#basicModal" id="about">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-item" href="#" id="credit">Credit</a>
+                <li class="nav-item active">
+                    <a class="nav-item" href="#" data-toggle="modal" data-target="#creditModal" id="credit">Credit</a>
                 </li>
+                </ul>
         </div>
       </nav>
       <!--Main Page-->
